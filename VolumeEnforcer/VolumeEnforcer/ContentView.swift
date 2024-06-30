@@ -3,9 +3,17 @@ import ISSoundAdditions
 
 class VolumeMonitor: ObservableObject {
     @Published var currentVolume: Float = Sound.output.volume * 100
-    @Published var volumeLimit: Float = 80 // Default limit of 80%
+    @Published var volumeLimit: Float {
+        didSet {
+            UserDefaults.standard.set(volumeLimit, forKey: "VolumeLimit")
+        }
+    }
     
     init() {
+        self.volumeLimit = UserDefaults.standard.float(forKey: "VolumeLimit")
+        if self.volumeLimit == 0 {
+            self.volumeLimit = 80 // Default limit of 80% if not set
+        }
         startMonitoring()
     }
     
@@ -46,6 +54,7 @@ struct ContentView: View {
         .padding()
         .onAppear {
             print("Volume Enforcer started.")
+            volumeMonitor.checkAndLimitVolume()
         }
         .onChange(of: volumeMonitor.volumeLimit) { _, newValue in
             volumeMonitor.checkAndLimitVolume()
