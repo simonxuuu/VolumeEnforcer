@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF3FFF9D2C2A33D8001DB3E6 /* VolumeEnforcerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3FFF9C2C2A33D8001DB3E6 /* VolumeEnforcerApp.swift */; };
+		DF3FFF9F2C2A33D8001DB3E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3FFF9E2C2A33D8001DB3E6 /* ContentView.swift */; };
+		DF3FFFA12C2A33D9001DB3E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3FFFA02C2A33D9001DB3E6 /* Assets.xcassets */; };
+		DF3FFFA42C2A33D9001DB3E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3FFFA32C2A33D9001DB3E6 /* Preview Assets.xcassets */; };
+		DF3FFFAF2C2A33D9001DB3E6 /* VolumeEnforcerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3FFFAE2C2A33D9001DB3E6 /* VolumeEnforcerTests.swift */; };
+		DF3FFFB92C2A33D9001DB3E6 /* VolumeEnforcerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3FFFB82C2A33D9001DB3E6 /* VolumeEnforcerUITests.swift */; };
+		DF3FFFBB2C2A33D9001DB3E6 /* VolumeEnforcerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3FFFBA2C2A33D9001DB3E6 /* VolumeEnforcerUITestsLaunchTests.swift */; };
+		DFCDB51C2C30EB3000AC48B1 /* ISSoundAdditions in Frameworks */ = {isa = PBXBuildFile; productRef = DFCDB51B2C30EB3000AC48B1 /* ISSoundAdditions */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF3FFFAB2C2A33D9001DB3E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF3FFF912C2A33D8001DB3E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF3FFF982C2A33D8001DB3E6;
+			remoteInfo = VolumeEnforcer;
+		};
+		DF3FFFB52C2A33D9001DB3E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF3FFF912C2A33D8001DB3E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF3FFF982C2A33D8001DB3E6;
+			remoteInfo = VolumeEnforcer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF3FFF992C2A33D8001DB3E6 /* VolumeEnforcer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolumeEnforcer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF3FFF9C2C2A33D8001DB3E6 /* VolumeEnforcerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeEnforcerApp.swift; sourceTree = "<group>"; };
+		DF3FFF9E2C2A33D8001DB3E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DF3FFFA02C2A33D9001DB3E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF3FFFA32C2A33D9001DB3E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF3FFFA52C2A33D9001DB3E6 /* VolumeEnforcer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VolumeEnforcer.entitlements; sourceTree = "<group>"; };
+		DF3FFFAA2C2A33D9001DB3E6 /* VolumeEnforcerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolumeEnforcerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF3FFFAE2C2A33D9001DB3E6 /* VolumeEnforcerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeEnforcerTests.swift; sourceTree = "<group>"; };
+		DF3FFFB42C2A33D9001DB3E6 /* VolumeEnforcerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolumeEnforcerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF3FFFB82C2A33D9001DB3E6 /* VolumeEnforcerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeEnforcerUITests.swift; sourceTree = "<group>"; };
+		DF3FFFBA2C2A33D9001DB3E6 /* VolumeEnforcerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeEnforcerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF3FFF962C2A33D8001DB3E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFCDB51C2C30EB3000AC48B1 /* ISSoundAdditions in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF3FFFA72C2A33D9001DB3E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF3FFFB12C2A33D9001DB3E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF3FFF902C2A33D8001DB3E6 = {
+			isa = PBXGroup;
+			children = (
+				DF3FFF9B2C2A33D8001DB3E6 /* VolumeEnforcer */,
+				DF3FFFAD2C2A33D9001DB3E6 /* VolumeEnforcerTests */,
+				DF3FFFB72C2A33D9001DB3E6 /* VolumeEnforcerUITests */,
+				DF3FFF9A2C2A33D8001DB3E6 /* Products */,
+				DFCDB51A2C30EB3000AC48B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DF3FFF9A2C2A33D8001DB3E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF3FFF992C2A33D8001DB3E6 /* VolumeEnforcer.app */,
+				DF3FFFAA2C2A33D9001DB3E6 /* VolumeEnforcerTests.xctest */,
+				DF3FFFB42C2A33D9001DB3E6 /* VolumeEnforcerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF3FFF9B2C2A33D8001DB3E6 /* VolumeEnforcer */ = {
+			isa = PBXGroup;
+			children = (
+				DF3FFF9C2C2A33D8001DB3E6 /* VolumeEnforcerApp.swift */,
+				DF3FFF9E2C2A33D8001DB3E6 /* ContentView.swift */,
+				DF3FFFA02C2A33D9001DB3E6 /* Assets.xcassets */,
+				DF3FFFA52C2A33D9001DB3E6 /* VolumeEnforcer.entitlements */,
+				DF3FFFA22C2A33D9001DB3E6 /* Preview Content */,
+			);
+			path = VolumeEnforcer;
+			sourceTree = "<group>";
+		};
+		DF3FFFA22C2A33D9001DB3E6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DF3FFFA32C2A33D9001DB3E6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF3FFFAD2C2A33D9001DB3E6 /* VolumeEnforcerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF3FFFAE2C2A33D9001DB3E6 /* VolumeEnforcerTests.swift */,
+			);
+			path = VolumeEnforcerTests;
+			sourceTree = "<group>";
+		};
+		DF3FFFB72C2A33D9001DB3E6 /* VolumeEnforcerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DF3FFFB82C2A33D9001DB3E6 /* VolumeEnforcerUITests.swift */,
+				DF3FFFBA2C2A33D9001DB3E6 /* VolumeEnforcerUITestsLaunchTests.swift */,
+			);
+			path = VolumeEnforcerUITests;
+			sourceTree = "<group>";
+		};
+		DFCDB51A2C30EB3000AC48B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF3FFF982C2A33D8001DB3E6 /* VolumeEnforcer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF3FFFBE2C2A33D9001DB3E6 /* Build configuration list for PBXNativeTarget "VolumeEnforcer" */;
+			buildPhases = (
+				DF3FFF952C2A33D8001DB3E6 /* Sources */,
+				DF3FFF962C2A33D8001DB3E6 /* Frameworks */,
+				DF3FFF972C2A33D8001DB3E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VolumeEnforcer;
+			packageProductDependencies = (
+				DFCDB51B2C30EB3000AC48B1 /* ISSoundAdditions */,
+			);
+			productName = VolumeEnforcer;
+			productReference = DF3FFF992C2A33D8001DB3E6 /* VolumeEnforcer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF3FFFA92C2A33D9001DB3E6 /* VolumeEnforcerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF3FFFC12C2A33D9001DB3E6 /* Build configuration list for PBXNativeTarget "VolumeEnforcerTests" */;
+			buildPhases = (
+				DF3FFFA62C2A33D9001DB3E6 /* Sources */,
+				DF3FFFA72C2A33D9001DB3E6 /* Frameworks */,
+				DF3FFFA82C2A33D9001DB3E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF3FFFAC2C2A33D9001DB3E6 /* PBXTargetDependency */,
+			);
+			name = VolumeEnforcerTests;
+			productName = VolumeEnforcerTests;
+			productReference = DF3FFFAA2C2A33D9001DB3E6 /* VolumeEnforcerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DF3FFFB32C2A33D9001DB3E6 /* VolumeEnforcerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF3FFFC42C2A33D9001DB3E6 /* Build configuration list for PBXNativeTarget "VolumeEnforcerUITests" */;
+			buildPhases = (
+				DF3FFFB02C2A33D9001DB3E6 /* Sources */,
+				DF3FFFB12C2A33D9001DB3E6 /* Frameworks */,
+				DF3FFFB22C2A33D9001DB3E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF3FFFB62C2A33D9001DB3E6 /* PBXTargetDependency */,
+			);
+			name = VolumeEnforcerUITests;
+			productName = VolumeEnforcerUITests;
+			productReference = DF3FFFB42C2A33D9001DB3E6 /* VolumeEnforcerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF3FFF912C2A33D8001DB3E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					DF3FFF982C2A33D8001DB3E6 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					DF3FFFA92C2A33D9001DB3E6 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = DF3FFF982C2A33D8001DB3E6;
+					};
+					DF3FFFB32C2A33D9001DB3E6 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = DF3FFF982C2A33D8001DB3E6;
+					};
+				};
+			};
+			buildConfigurationList = DF3FFF942C2A33D8001DB3E6 /* Build configuration list for PBXProject "VolumeEnforcer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF3FFF902C2A33D8001DB3E6;
+			packageReferences = (
+				DFCDB5192C30E8B800AC48B1 /* XCRemoteSwiftPackageReference "ISSoundAdditions" */,
+			);
+			productRefGroup = DF3FFF9A2C2A33D8001DB3E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF3FFF982C2A33D8001DB3E6 /* VolumeEnforcer */,
+				DF3FFFA92C2A33D9001DB3E6 /* VolumeEnforcerTests */,
+				DF3FFFB32C2A33D9001DB3E6 /* VolumeEnforcerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF3FFF972C2A33D8001DB3E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3FFFA42C2A33D9001DB3E6 /* Preview Assets.xcassets in Resources */,
+				DF3FFFA12C2A33D9001DB3E6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF3FFFA82C2A33D9001DB3E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF3FFFB22C2A33D9001DB3E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF3FFF952C2A33D8001DB3E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3FFF9F2C2A33D8001DB3E6 /* ContentView.swift in Sources */,
+				DF3FFF9D2C2A33D8001DB3E6 /* VolumeEnforcerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF3FFFA62C2A33D9001DB3E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3FFFAF2C2A33D9001DB3E6 /* VolumeEnforcerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF3FFFB02C2A33D9001DB3E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3FFFBB2C2A33D9001DB3E6 /* VolumeEnforcerUITestsLaunchTests.swift in Sources */,
+				DF3FFFB92C2A33D9001DB3E6 /* VolumeEnforcerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF3FFFAC2C2A33D9001DB3E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF3FFF982C2A33D8001DB3E6 /* VolumeEnforcer */;
+			targetProxy = DF3FFFAB2C2A33D9001DB3E6 /* PBXContainerItemProxy */;
+		};
+		DF3FFFB62C2A33D9001DB3E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF3FFF982C2A33D8001DB3E6 /* VolumeEnforcer */;
+			targetProxy = DF3FFFB52C2A33D9001DB3E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DF3FFFBC2C2A33D9001DB3E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF3FFFBD2C2A33D9001DB3E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		DF3FFFBF2C2A33D9001DB3E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VolumeEnforcer/VolumeEnforcer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VolumeEnforcer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = simon.VolumeEnforcer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DF3FFFC02C2A33D9001DB3E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VolumeEnforcer/VolumeEnforcer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VolumeEnforcer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = simon.VolumeEnforcer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DF3FFFC22C2A33D9001DB3E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = simon.VolumeEnforcerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VolumeEnforcer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VolumeEnforcer";
+			};
+			name = Debug;
+		};
+		DF3FFFC32C2A33D9001DB3E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = simon.VolumeEnforcerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VolumeEnforcer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VolumeEnforcer";
+			};
+			name = Release;
+		};
+		DF3FFFC52C2A33D9001DB3E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = simon.VolumeEnforcerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = VolumeEnforcer;
+			};
+			name = Debug;
+		};
+		DF3FFFC62C2A33D9001DB3E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = simon.VolumeEnforcerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = VolumeEnforcer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF3FFF942C2A33D8001DB3E6 /* Build configuration list for PBXProject "VolumeEnforcer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF3FFFBC2C2A33D9001DB3E6 /* Debug */,
+				DF3FFFBD2C2A33D9001DB3E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF3FFFBE2C2A33D9001DB3E6 /* Build configuration list for PBXNativeTarget "VolumeEnforcer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF3FFFBF2C2A33D9001DB3E6 /* Debug */,
+				DF3FFFC02C2A33D9001DB3E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF3FFFC12C2A33D9001DB3E6 /* Build configuration list for PBXNativeTarget "VolumeEnforcerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF3FFFC22C2A33D9001DB3E6 /* Debug */,
+				DF3FFFC32C2A33D9001DB3E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF3FFFC42C2A33D9001DB3E6 /* Build configuration list for PBXNativeTarget "VolumeEnforcerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF3FFFC52C2A33D9001DB3E6 /* Debug */,
+				DF3FFFC62C2A33D9001DB3E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DFCDB5192C30E8B800AC48B1 /* XCRemoteSwiftPackageReference "ISSoundAdditions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/InerziaSoft/ISSoundAdditions";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DFCDB51B2C30EB3000AC48B1 /* ISSoundAdditions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFCDB5192C30E8B800AC48B1 /* XCRemoteSwiftPackageReference "ISSoundAdditions" */;
+			productName = ISSoundAdditions;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DF3FFF912C2A33D8001DB3E6 /* Project object */;
+}
